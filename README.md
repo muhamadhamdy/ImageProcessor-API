@@ -27,16 +27,16 @@ Expected query arguments are:
 - _width_: numerical pixel value > 0
 
 #### Example 
-http://localhost:3111//resize?imagename=palmtunnel.jpg&height=400&width=400
+http://localhost:3111/resize?imagename=palmtunnel.jpg&height=400&width=400
 Will scale the palmtunnel.jpg image to 400 by 400 pixels and store the resulting image.
 On subsequent calls will serve the resized image instead of resizing the original again.
 
 #### Example 2
-http://localhost:3111//resize?imagename=palmtunnel.jpg&height=-400&width=400
+http://localhost:3111/resize?imagename=palmtunnel.jpg&height=-400&width=400
 Values of height and width must be a positive number over 0.
 
-#### Example 2
-http://localhost:3111//resize?imagename=palmtunnel&height=-400&width=400
+#### Example 3
+http://localhost:3111/resize?imagename=palmtunnel&height=-400&width=400
 Error resizing image.
 
 #### Example 4
