@@ -1,0 +1,41 @@
+{
+  "name": "imageprocessor",
+  "version": "1.0.0",
+  "description": "Image size processor API",
+  "main": "index.js",
+  "scripts": {
+    "lint":"npx eslint",
+    "jasmine": "jasmine",
+    "build": "npx tsc",
+    "test": "npm run build && npm run jasmine",
+    "start": "npm run build && nodemon src/index.ts",
+    "P_start": "node build/index.js",
+    "prettier":"npx prettier --config .prettierrc --write src/**/*.ts"
+
+  },
+  "author": "Muhammad Hamdy",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "@types/jasmine": "^4.3.0",
+    "@types/node": "^18.11.9",
+    "@types/sharp": "^0.31.0",
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "@typescript-eslint/parser": "^5.43.0",
+    "eslint": "^8.27.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.10",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.9.1",
+    "tsconfig": "^7.0.0",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "jasmine": "^4.5.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "sharp": "^0.31.2"
+  }
+}
