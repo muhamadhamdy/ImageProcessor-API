@@ -4,8 +4,8 @@ import utils from '../components/utilities';
 const indexRoute = Router();
 
 indexRoute.get('/', (req: Request, res: Response): void => {
-    let arr = utils.getfullImagesNames(utils.getInputPath());
-    let s: string = '';
+    const arr = utils.getfullImagesNames(utils.getInputPath());
+    let s = '';
     arr.map((e) => {
         s += '<li>'.concat(e, '</li>');
     });

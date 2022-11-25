@@ -4,14 +4,13 @@
   "description": "Image size processor API",
   "main": "index.js",
   "scripts": {
-    "lint":"npx eslint",
+    "lint": "npx eslint",
     "jasmine": "jasmine",
     "build": "npx tsc",
     "test": "npm run build && npm run jasmine",
     "start": "npm run build && nodemon src/index.ts",
     "P_start": "node build/index.js",
-    "prettier":"npx prettier --config .prettierrc --write src/**/*.ts"
-
+    "prettier": "npx prettier --config .prettierrc --write src/**/*.ts"
   },
   "author": "Muhammad Hamdy",
   "license": "ISC",

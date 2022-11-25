@@ -1,4 +1,4 @@
-import sharp, { FormatEnum } from 'sharp';
+import sharp from 'sharp';
 import { resizeParams } from './utilities';
 
 const sharpImage = async (params: resizeParams): Promise<boolean> => {

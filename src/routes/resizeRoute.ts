@@ -1,6 +1,6 @@
 import { Request, Response, Router } from 'express';
 import processing from '../components/imageProc';
-import utils, { processReturn, queryParams } from '../components/utilities';
+import utils, { queryParams } from '../components/utilities';
 
 const resizeRoute = Router();
 
